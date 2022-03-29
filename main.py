@@ -28,7 +28,7 @@ class Tile(pygame.sprite.Sprite):
 
 class Game():
     def __init__(self):
-        self.level = 1
+        self.level = 6
         self.level_complete = False
 
         #aliens
