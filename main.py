@@ -1,3 +1,5 @@
+from lib2to3.pgen2.token import GREATER
+from string import whitespace
 import pygame, cv2, random, os
 from config import *
 
@@ -130,7 +132,7 @@ class Game():
 
 
     def draw(self):
-        screen.fill(BLACK)
+        screen.fill(DARKBLUE)
         content_font = pygame.font.SysFont(None, 24)
         
 
