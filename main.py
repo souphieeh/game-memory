@@ -132,7 +132,7 @@ class Game():
 
 
     def draw(self):
-        screen.fill(DARKBLUE)
+        screen.fill(LIGHTSLATEGREY)
         content_font = pygame.font.SysFont(None, 24)
         
 
