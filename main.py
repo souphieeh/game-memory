@@ -55,7 +55,7 @@ class Game():
 
         self.title_font = pygame.font.SysFont(None, 44)
         self.title_text = self.title_font.render('Memory Game',True, WHITE)
-        self.title_rect = self.title_text.get_rect(midtop = (WINDOW_WIDTH // 2, 10))
+        self.title_rect = self.title_text.get_rect(midtop = (WINDOW_WIDTH // 2, 50))
 
     def update(self, event_list):
         self.user_input(event_list)
@@ -80,6 +80,7 @@ class Game():
                                             self.level_complete = True
                                         else: 
                                             self.level_complete + False
+                                            print("congrats")
                                             break
         else: 
             self.frame_count += 1
@@ -140,7 +141,7 @@ class Game():
         level_rect = level_text.get_rect(midtop = (50,50))
 
         screen.blit(self.title_text,self.title_rect)
-        screen.blit(level_text,level_rect)
+        #screen.blit(level_text,level_rect)
 
         # draw tileset
         self.tiles_group.draw(screen)
